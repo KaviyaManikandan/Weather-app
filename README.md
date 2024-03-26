@@ -1,6 +1,6 @@
 # Weather App
 
-This repository contains a simple Weather App built using HTML, CSS, and JavaScript. The app displays weather information based on user input.
+This repository contains a simple Weather App built using HTML, CSS, and JavaScript with docker. The app displays weather information based on user input.
 
 ## Usage
 
