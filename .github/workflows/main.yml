@@ -1,0 +1,28 @@
+name: Weather App Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy Weather App
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build Docker image
+        run: docker build -t weather-app .
+
+      - name: Run Docker container
+        run: docker run -d -p 8080:80 --name weather-app weather-app
+
+      - name: Wait for Docker container to start
+        run: sleep 10
+
+      - name: Test application
+        run: curl http://localhost:8080
+
