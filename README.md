@@ -33,7 +33,7 @@ docker run -d -p 8080:80 weather-app
 
 ## GitHub Actions
 
-This repository includes a GitHub Actions workflow that automatically builds and deploys the Weather App. Whenever changes are pushed to the main branch, the workflow triggers a Docker container to run the app. You can see the output by clicking [here](http://localhost:8080).
+This repository includes a GitHub Actions workflow that automatically builds and deploys the Weather App. Whenever changes are pushed to the main branch, the workflow triggers a Docker container to run the app. 
 
 ## Contributing
 
